@@ -10,30 +10,31 @@
   </head>
   <body>
     <div class="top-bar">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu="zrtbeq-dropdown-menu">
-      <li class="menu-text">Foundation Sample</li>
-      <li>
-        <a href="#">Key Features</a>
-        <ul class="menu vertical">
-          <li><a href="#">Callouts</a></li>
-          <li><a href="#">Grids</a></li>
-          <li><a href="#">Buttons</a></li>
-          <li><a href="#">Tables</a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#">Pagination</a></li>
-        </ul>
-        </li>
-        </ul>
-    </div>
-    <div class="top-bar-right">
-            <ul class="menu">
-                <li><input type="search" placeholder="Search"></li>
-                <li><button type="button" class="button">Search</button></li>
+      <div class="top-bar-left">
+	<ul class="dropdown menu" data-dropdown-menu="zrtbeq-dropdown-menu">
+	  <li class="menu-text">Foundation Sample</li>
+	  <li>
+            <a href="#">Key Features</a>
+            <ul class="menu vertical">
+              <li><a href="#">Callouts</a></li>
+              <li><a href="#">Form</a></li>
+              <li><a href="#">Buttons</a></li>
+              <li><a href="#">Media Object</a></li>
+              <li><a href="#">Pagination</a></li>
             </ul>
-        </div>
+          </li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
     </div>
-  
+
+    <br><br>
+    
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell">
@@ -41,6 +42,32 @@
         </div>
       </div>
 
+      <div class="primary progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+	<div class="progress-meter" style="width: 25%">
+	  <p class="progress-meter-text">25%</p>
+	</div>
+      </div>
+
+      <div class="warning progress">
+	<div class="progress-meter" style="width: 50%">
+	  <p class="progress-meter-text">50%</p>
+	</div>
+      </div>
+
+      <div class="alert progress">
+	<div class="progress-meter" style="width: 75%">
+	  <p class="progress-meter-text">75%</p>
+	</div>
+      </div>
+
+      <div class="success progress" role="progressbar" tabindex="0" aria-valuenow="100" aria-valuemin="0" aria-valuetext="100 percent" aria-valuemax="100">
+	<div class="progress-meter" style="width: 100%">
+	  <p class="progress-meter-text">100%</p>
+	</div>
+      </div>
+      
+      <br>
+      
       <div class="grid-x grid-padding-x">
         <div class="large-8 medium-8 cell">
           <h5>Here&rsquo;s your basic grid:</h5>
@@ -49,38 +76,41 @@
           <div class="grid-x grid-padding-x">
             <div class="large-12 cell">
               <div class="primary callout">
-                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
+                <div class="media-object">
+		  <div class="media-object-section">
+		    <img src= "https://placeimg.com/200/200/people">
+		  </div>
+		  <div class="media-object-section">
+		    <h4>Dreams feel real while we're in them.</h4>
+		    <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+		  </div>
+		</div>
               </div>
             </div>
           </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
+
+
+	  <div class="grid-x grid-padding-x">
+
+	    <div class="small-8 medium-8 large-8 cell">
               <div class="primary callout">
-                <p>Six cell</p>
+		<div class="media-object">
+		  <div class="media-object-section">
+		    <h4>Monsters aren't real.</h4>
+		    <p>I'm just kidding. They probably are. You just gotta look harder to find them. Take a look under your bed.</p>
+		  </div>
+		  <div class="media-object-section">
+		    <img src="http://dragon-mania-legends-wiki.mobga.me/images/thumb/3/3c/Yeti_Dragon_Baby.png/150px-Yeti_Dragon_Baby.png">
+		  </div>
+		</div>
               </div>
             </div>
-            <div class="large-6 medium-6 cell">
+            <div class="small-4 medium-4 large-4 cell">
               <div class="primary callout">
-                <p>Six cell</p>
+                <p>Well lookie here. It's an empty space! Here's some more words to make this website look full and interesting. Words words words!</p>
               </div>
             </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
+            
           </div>
 
           <hr />
@@ -93,12 +123,11 @@
                 <input type="text" placeholder="large-12.cell" />
               </div>
             </div>
+	    
             <div class="grid-x grid-padding-x">
               <div class="large-4 medium-4 cell">
-              <div class="callout">
                 <label>Input Label</label>
                 <input type="text" placeholder="large-4.cell" />
-              </div>
               </div>
               <div class="large-4 medium-4 cell">
                 <label>Input Label</label>
@@ -127,11 +156,9 @@
             </div>
             <div class="grid-x grid-padding-x">
               <div class="large-6 medium-6 cell">
-              <div class="callout">
                 <label>Choose Your Favorite</label>
                 <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
                 <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
               </div>
               <div class="large-6 medium-6 cell">
                 <label>Check these out</label>
@@ -146,6 +173,25 @@
               </div>
             </div>
           </form>
+
+	  <hr />
+
+	  <br><br>
+
+	  <ul class="pagination" role="navigation" aria-label="Pagination">
+	    <li class="disabled">Previous <span class="show-for-sr">page</span></li>
+	    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+	    <li><a href="#0" aria-label="Page 2">2</a></li>
+	    <li><a href="#0" aria-label="Page 3">3</a></li>
+	    <li><a href="#0" aria-label="Page 4">4</a></li>
+	    <li class="ellipsis" aria-hidden="true"></li>
+	    <li><a href="#0" aria-label="Page 12">12</a></li>
+	    <li><a href="#0" aria-label="Page 13">13</a></li>
+	    <li><a href="#0" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+	  </ul>
+
+	  <br><br>
+	  
         </div>
 
         <div class="large-4 medium-4 cell">
@@ -171,6 +217,7 @@
         </div>
       </div>
     </div>
+
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
